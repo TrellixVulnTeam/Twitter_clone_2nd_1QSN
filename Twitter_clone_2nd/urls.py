@@ -20,5 +20,6 @@ from accounts import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('accounts.urls'))
+    path('',include('accounts.urls')),
+    path('post/',include('post.urls')),
 ]
