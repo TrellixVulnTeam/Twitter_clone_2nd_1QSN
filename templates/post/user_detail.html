@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ログインユーザーの詳細画面です。</title>
+</head>
+<body>
+<p>ログインしているユーザーの詳細です。</p>
+<p>名前:{{ user }}</p>
+<p>E-mail:{{ user.email }}</p>
+<p>これまでの投稿一覧</p>
+<hr>
+{% for post in posts %}
+<p>[{{ post }}]</p>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新規登録画面です。</title>
+</head>
+<body>
+<form action="{% url 'accounts:create' %}" method="post">
+    {% csrf_token %}
+   {{ form.as_p }}
+    <button type="submit">登録</button>
+</form>
+</body>
+</html>

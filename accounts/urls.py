@@ -9,4 +9,5 @@ urlpatterns = [
     path('', TopPageView.as_view(), name='toppage'),
     path('login/', views.Login.as_view(), name='login'),
     path('logout/', views.Logout.as_view(), name='logout'),
+    path('usercreate/',views.UserCreate.as_view(),name='create')
 ]
